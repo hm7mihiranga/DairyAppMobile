@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    tools:context=".UpdateActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/editetopic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="EDIT NEW ENTRY"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/yellow"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/updatesaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/yellow"
+            android:paddingEnd="6dp"
+            android:src="@drawable/baseline_add_task_24"
+            android:tint="@color/white"
+            android:cropToPadding="true"
+            app:maxImageSize="40dp"
+            app:borderWidth="0dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updatetext002"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:textColor="@color/white"
+            android:maxLines="1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:padding="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updatetext001"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add your Daily works"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/imagesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="left|bottom">
+
+            <ImageButton
+                android:id="@+id/updateimageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+            <ImageView
+                android:id="@+id/updatecapturedImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updatetextView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/updatebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Date"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/neon_purple"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

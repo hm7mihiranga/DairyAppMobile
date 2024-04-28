@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "58320941058",
+    "project_id": "diaryapp-5a694",
+    "storage_bucket": "diaryapp-5a694.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58320941058:android:a7c00d5d3e1ec9434bf71b",
+        "android_client_info": {
+          "package_name": "com.goobar.io.starting_the_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFVIP65J9xJ3N8ZxqQifEEejWThVHcErs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
